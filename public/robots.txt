@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.tofinasparkle.co.ke/sitemap.xml

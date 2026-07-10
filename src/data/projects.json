@@ -1,0 +1,6 @@
+[
+  { "id": "p1", "title": "Tudor Business Park — Office Contract", "category": "Commercial", "location": "Tudor, Mombasa", "summary": "Ongoing after-hours cleaning across three office floors, 40+ workstations, and two boardrooms." },
+  { "id": "p2", "title": "Mtwapa Apartments — Post-Construction Handover", "category": "Post-Construction", "location": "Mtwapa, Mombasa", "summary": "Full-building post-construction clean across 24 units ahead of tenant handover." },
+  { "id": "p3", "title": "Kisauni Retail — Daily Shop-Floor Reset", "category": "Retail", "location": "Kisauni, Mombasa", "summary": "Nightly reset of shopfront glass, floors, and fitting rooms ahead of daily opening." },
+  { "id": "p4", "title": "Diani Family Residence — Deep Clean & Recurring Plan", "category": "Residential", "location": "Diani, Mombasa", "summary": "Initial deep clean followed by a bi-weekly recurring residential plan." }
+]

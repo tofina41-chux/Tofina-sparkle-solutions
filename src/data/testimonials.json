@@ -1,0 +1,8 @@
+[
+  { "id": "t1", "name": "Wanjiru Kamau", "business": "Homeowner, Nyali", "rating": 5, "text": "The same team has cleaned our house every two weeks for a year. They know exactly how we like things done and never need reminding twice." },
+  { "id": "t2", "name": "David Otieno", "business": "Operations Manager, Kisauni Retail", "rating": 5, "text": "We switched our shop-floor contract to Tofina after a bad experience elsewhere. Consistency is the difference — every morning, without fail." },
+  { "id": "t3", "name": "Amina Yusuf", "business": "Homeowner, Bamburi", "rating": 5, "text": "Move-out cleaning got our full deposit back. The landlord's inspector actually commented on the oven." },
+  { "id": "t4", "name": "James Mwangi", "business": "Facilities Lead, Tudor Business Park", "rating": 5, "text": "Office cleaning across three floors, handled after-hours so it never disrupts staff. Reporting is clear and the supervisor is responsive." },
+  { "id": "t5", "name": "Grace Achieng", "business": "Homeowner, Diani", "rating": 5, "text": "Carpet cleaning brought colour back into rugs I thought were done for. Dried faster than I expected too." },
+  { "id": "t6", "name": "Peter Kariuki", "business": "Site Manager, Mtwapa Apartments", "rating": 5, "text": "Post-construction cleanup on our new block was thorough — every unit was genuinely move-in ready, not just swept." }
+]

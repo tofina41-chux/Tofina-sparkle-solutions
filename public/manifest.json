@@ -1,0 +1,10 @@
+{
+  "name": "Tofina Sparkle Solutions",
+  "short_name": "Tofina Sparkle",
+  "description": "Premium residential & commercial cleaning across Mombasa.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#8B1E1E",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

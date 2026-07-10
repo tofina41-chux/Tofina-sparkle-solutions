@@ -1,0 +1,6 @@
+[
+  { "id": "m1", "name": "Catherine Wafula", "role": "Founder & Managing Director", "bio": "Founded Tofina Sparkle Solutions to bring hospitality-grade cleaning standards to everyday homes and businesses in Mombasa." },
+  { "id": "m2", "name": "Brian Otieno", "role": "Operations Manager", "bio": "Oversees scheduling, quality audits, and team training across all residential and commercial contracts." },
+  { "id": "m3", "name": "Faith Njeri", "role": "Commercial Accounts Lead", "bio": "Manages onboarding and reporting for office, retail, and shared-space contracts." },
+  { "id": "m4", "name": "Samuel Kiptoo", "role": "Field Supervisor", "bio": "Leads on-site teams for deep cleaning, post-construction, and specialist upholstery jobs." }
+]
