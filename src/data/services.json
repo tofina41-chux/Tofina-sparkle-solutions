@@ -7,7 +7,7 @@
     "description": "Our residential teams cover every room to a consistent checklist, from kitchens and bathrooms to bedrooms and living areas. Choose a one-time visit or a weekly, bi-weekly, or monthly plan — the same two-person team returns each time so they learn your home.",
     "features": ["Kitchen degreasing & sanitising", "Bathroom descaling", "Dusting, vacuuming & mopping", "Bed making & tidying", "Window sills & skirting boards", "Recurring plans available"],
     "image": "residential",
-    "startingPrice": "KES 3,500",
+    "startingPrice": "KES 2,500",
     "duration": "2 – 4 hours"
   },
   {
@@ -40,7 +40,7 @@
     "description": "Retail floors take a beating from foot traffic. We handle daily or nightly resets so shelves, floors, glass, and fitting rooms are guest-ready before opening.",
     "features": ["Shopfront glass cleaning", "Floor scrubbing & polishing", "Shelf & display dusting", "Fitting room resets", "Early-morning slots", "Spill response"],
     "image": "shop",
-    "startingPrice": "KES 4,500",
+    "startingPrice": "KES 3,500",
     "duration": "1 – 3 hours"
   },
   {
@@ -62,7 +62,7 @@
     "description": "We assess fibre type before treatment, pre-treat stains, then use hot-water extraction to lift dirt from deep within the pile — not just the surface. Carpets are left as dry as possible to minimise downtime.",
     "features": ["Fibre-safe pre-inspection", "Stain & spot treatment", "Hot-water extraction", "Deodorising finish", "Fast-dry technique", "Rugs & wall-to-wall carpet"],
     "image": "carpet",
-    "startingPrice": "KES 250 / m²",
+    "startingPrice": "KES 700",
     "duration": "2 – 5 hours"
   },
   {
@@ -73,7 +73,7 @@
     "description": "We identify your upholstery type first — fabric, suede, or leather — then use the correct method and products so colour and texture are preserved while stains and odours are removed.",
     "features": ["Fabric & leather safe", "Stain-specific treatment", "Odour neutralising", "Cushion cover care", "Fast-dry finish", "Per-seat pricing"],
     "image": "sofa",
-    "startingPrice": "KES 800 / seat",
+    "startingPrice": "KES 600 / seater",
     "duration": "1 – 2 hours"
   },
   {
@@ -84,7 +84,7 @@
     "description": "Mattresses trap dust, sweat, and allergens over years of use. Our process combines dry vacuuming, steam sanitising, and stain treatment to leave your mattress hygienically clean and quick to dry.",
     "features": ["Dust mite & allergen treatment", "Steam sanitising", "Stain & odour removal", "Both-side cleaning", "Quick-dry process", "All mattress sizes"],
     "image": "mattress",
-    "startingPrice": "KES 2,000",
+    "startingPrice": "KES 700",
     "duration": "1 – 2 hours"
   },
   {
@@ -95,7 +95,7 @@
     "description": "New homes still need a deep clean, even after builders or previous tenants leave. We clean cabinets inside and out, sanitise bathrooms and kitchens, and handle windows so you can move straight in.",
     "features": ["Inside-cabinet cleaning", "Kitchen & bathroom sanitising", "Window & sill cleaning", "Floor deep clean", "Skirting & fixture wipe-down", "Same-week booking"],
     "image": "movein",
-    "startingPrice": "KES 6,000",
+    "startingPrice": "KES 3,000",
     "duration": "3 – 6 hours"
   },
   {
@@ -106,7 +106,7 @@
     "description": "We follow a checklist built around typical landlord inspection standards, covering ovens, cabinets, bathrooms, and floors so you leave the property in the condition it deserves.",
     "features": ["Deposit-focused checklist", "Oven & appliance cleaning", "Cabinet interior cleaning", "Wall mark spot cleaning", "Full bathroom descaling", "Inspection-ready finish"],
     "image": "moveout",
-    "startingPrice": "KES 6,500",
+    "startingPrice": "KES 3,500",
     "duration": "3 – 6 hours"
   },
   {
@@ -117,7 +117,7 @@
     "description": "Deep cleaning goes beyond routine maintenance — behind appliances, inside cupboards, along skirting, and into corners that get missed week to week. Ideal as a seasonal reset or before a routine plan begins.",
     "features": ["Behind-appliance cleaning", "Cupboard interiors", "Grout & tile detailing", "Light fixture dusting", "Wall & door spot cleaning", "Full room-by-room checklist"],
     "image": "deep",
-    "startingPrice": "KES 9,000",
+    "startingPrice": "KES 4,000",
     "duration": "4 – 8 hours"
   },
   {

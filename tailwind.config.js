@@ -11,7 +11,7 @@ export default {
           light: "#A83A3A",
           dark: "#6B1414",
         },
-        secondary: "#2B2B2B",
+        secondary: "#5C2323",
         accent: "#D9D9D9",
         success: "#1D8F5A",
         surface: "#FFFFFF",

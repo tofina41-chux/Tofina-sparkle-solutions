@@ -1,6 +1,6 @@
 [
   { "id": "ba1", "title": "Carpet Restoration — Diani", "category": "Carpet Cleaning", "before": "carpet-before-1", "after": "carpet-after-1" },
-  { "id": "ba2", "title": "Kitchen Deep Clean — Nyali", "category": "Deep Cleaning", "before": "kitchen-before-1", "after": "kitchen-after-1" },
+  { "id": "ba2", "title": "Kitchen Deep Clean — Nyali", "category": "Deep Cleaning", "before": "office-before-1", "after": "office-after-1" },
   { "id": "ba3", "title": "Post-Construction — Mtwapa", "category": "Post-Construction", "before": "site-before-1", "after": "site-after-1" },
   { "id": "ba4", "title": "Sofa Upholstery — Shanzu", "category": "Sofa Cleaning", "before": "sofa-before-1", "after": "sofa-after-1" }
 ]

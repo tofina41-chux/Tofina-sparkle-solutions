@@ -187,7 +187,7 @@ This site is intentionally built as a **marketing site only** — no authenticat
 | Token | Value | Use |
 |---|---|---|
 | `primary` | `#8B1E1E` | Brand red — CTAs, links, accents |
-| `secondary` | `#2B2B2B` | Charcoal — dark sections, body text |
+| `secondary` | `#5C2323` | Deep burgundy — dark sections, body text |
 | `background` | `#FFFFFF` | Base surface |
 | `accent` | `#D9D9D9` | Borders, muted backgrounds |
 | `success` | `#1D8F5A` | WhatsApp button, success states |

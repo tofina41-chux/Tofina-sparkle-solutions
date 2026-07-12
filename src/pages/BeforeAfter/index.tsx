@@ -4,6 +4,10 @@ import SEO from "@/components/common/SEO";
 import Section from "@/components/ui/Section";
 import Container from "@/components/ui/Container";
 
+function getImageUrl(filename: string) {
+  return new URL(`../../assets/gallery/${filename}.png`, import.meta.url).href;
+}
+
 export default function BeforeAfter() {
   return (
     <>
@@ -22,8 +26,16 @@ export default function BeforeAfter() {
             {beforeAfter.map((item) => (
               <div key={item.id} className="rounded-2xl border border-accent bg-white p-5 shadow-card">
                 <div className="grid grid-cols-2 gap-3">
-                  <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-accent/50 text-xs font-medium uppercase tracking-widest text-secondary/50">Before</div>
-                  <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-primary/[0.08] text-xs font-medium uppercase tracking-widest text-primary/70">After</div>
+                  <img
+                    src={getImageUrl(item.before)}
+                    alt={`${item.title} before`}
+                    className="aspect-[4/3] w-full rounded-xl object-cover"
+                  />
+                  <img
+                    src={getImageUrl(item.after)}
+                    alt={`${item.title} after`}
+                    className="aspect-[4/3] w-full rounded-xl object-cover"
+                  />
                 </div>
                 <p className="mt-4 text-sm font-semibold text-secondary">{item.title}</p>
                 <p className="text-xs text-secondary/50">{item.category}</p>

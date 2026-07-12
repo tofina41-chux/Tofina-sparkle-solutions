@@ -1,6 +1,6 @@
 [
-  { "label": "Homes & offices cleaned", "value": 4200, "suffix": "+" },
-  { "label": "Years in operation", "value": 8, "suffix": "" },
-  { "label": "Trained cleaning staff", "value": 65, "suffix": "+" },
+  { "label": "Homes & offices cleaned", "value": 300, "suffix": "+" },
+  { "label": "Years in operation", "value": 5, "suffix": "" },
+  { "label": "Trained cleaning staff", "value": 10, "suffix": "+" },
   { "label": "Client satisfaction", "value": 98, "suffix": "%" }
 ]

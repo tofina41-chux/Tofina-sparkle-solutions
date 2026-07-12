@@ -5,19 +5,29 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 
+function getImageUrl(filename: string) {
+  return new URL(`../../assets/gallery/${filename}.png`, import.meta.url).href;
+}
+
 function Slider({ item }: { item: (typeof beforeAfter)[number] }) {
   const [pos, setPos] = useState(50);
   return (
     <div className="rounded-2xl border border-accent/70 bg-white p-4 shadow-card">
       <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-secondary/5">
-        <div className="absolute inset-0 flex items-center justify-center bg-primary/[0.07] text-xs font-medium uppercase tracking-widest text-primary/70">
-          After
-        </div>
+        <img
+          src={getImageUrl(item.after)}
+          alt={`${item.title} after`}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
         <div
-          className="absolute inset-0 flex items-center justify-center overflow-hidden bg-accent/50 text-xs font-medium uppercase tracking-widest text-secondary/50"
+          className="absolute inset-0 overflow-hidden"
           style={{ width: `${pos}%` }}
         >
-          <span style={{ width: "max(100%, 260px)" }} className="flex items-center justify-center">Before</span>
+          <img
+            src={getImageUrl(item.before)}
+            alt={`${item.title} before`}
+            className="h-full w-full object-cover"
+          />
         </div>
         <div
           className="absolute inset-y-0 w-0.5 bg-white shadow"
