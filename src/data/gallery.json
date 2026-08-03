@@ -1,6 +1,6 @@
 [
   { "id": "g1", "category": "Residential", "title": "Kitchen deep clean, Nyali", "image": "20230604_114729.jpg" },
-  { "id": "g2", "category": "Residential", "title": "Living room reset, Bamburi", "image": "20231121_172049.jpg" },
+  { "id": "g2", "category": "Residential", "title": "Living room reset, Bamburi", "image": "palm terrace-before.jpeg" },
   { "id": "g3", "category": "Commercial", "title": "Office floor, Ambalal", "image": "commercial-1.jpg" },
   { "id": "g4", "category": "Commercial", "title": "Office floor, Nyali", "image": "commercial-2.png" },
   { "id": "g5", "category": "Commercial", "title": "Office floor, Nyali", "image": "commercial-3.jpg" },
@@ -12,5 +12,11 @@
   { "id": "g11", "category": "Sofa", "title": "Fabric sofa restoration, Shanzu", "image": "sofa-3.jpg" },
   { "id": "g12", "category": "Sofa", "title": "Fabric sofa restoration, Shanzu", "image": "sofa-4.jpg" },
   { "id": "g13", "category": "Sofa", "title": "Fabric sofa restoration, Shanzu", "image": "sofa-5.jpg" },
-  { "id": "g14", "category": "Post-Construction", "title": "Handover clean, Mtwapa", "image": "IMG_20260709_150204.jpg" }
+  { "id": "g14", "category": "Sofa", "title": "Fabric sofa restoration, Shanzu", "image": "sofa-6.jpeg" },
+  { "id": "g15", "category": "Sofa", "title": "Fabric sofa restoration, Shanzu", "image": "sofa-before.jpeg" },
+  { "id": "g16", "category": "Sofa", "title": "Fabric sofa restoration, Shanzu", "image": "sofa-after.jpeg" },
+  { "id": "g17", "category": "Sofa", "title": "Fabric sofa restoration, Nyali", "image": "nyali-before.jpeg" },
+  { "id": "g18", "category": "Sofa", "title": "Fabric sofa restoration, Palm Terrace", "image": "palm terrace-before.jpeg" },
+  { "id": "g19", "category": "Sofa", "title": "Fabric sofa restoration, Links road", "image": "dark carpet-nyali.png" },
+  { "id": "g20", "category": "Post-Construction", "title": "Handover clean, Mtwapa", "image": "IMG_20260709_150204.jpg" }
 ]
