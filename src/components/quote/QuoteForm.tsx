@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FiUploadCloud, FiCheckCircle } from "react-icons/fi";
+import emailjs from "@emailjs/browser";
 import services from "@/data/services.json";
 import Button from "@/components/ui/Button";
 import type { QuoteFormValues } from "@/types";
@@ -15,14 +16,40 @@ export default function QuoteForm() {
     reset,
   } = useForm<QuoteFormValues>();
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [fileNames, setFileNames] = useState<string[]>([]);
 
-  const onSubmit = async () => {
-    // Wire this up to EmailJS (see README) or your backend of choice.
-    await new Promise((resolve) => setTimeout(resolve, 900));
-    setSubmitted(true);
-    reset();
-    setFileNames([]);
+  const onSubmit = async (data: QuoteFormValues) => {
+    setSubmitError(null);
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_QUOTE_TEMPLATE_ID || import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setSubmitError("Email delivery is not configured yet. Add your EmailJS credentials to .env.local and try again.");
+      return;
+    }
+
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          ...data,
+          preferredDate: data.preferredDate || "Not specified",
+          files: fileNames.join(", ") || "No files uploaded",
+        },
+        publicKey
+      );
+
+      setSubmitted(true);
+      reset();
+      setFileNames([]);
+    } catch (error) {
+      console.error("Quote request email failed", error);
+      setSubmitError("We couldn't send your request right now. Please try again in a moment.");
+    }
   };
 
   if (submitted) {
@@ -160,6 +187,8 @@ export default function QuoteForm() {
           </ul>
         )}
       </div>
+
+      {submitError && <p className="mt-4 text-sm text-primary">{submitError}</p>}
 
       <Button type="submit" disabled={isSubmitting} className="mt-6 w-full">
         {isSubmitting ? "Submitting..." : "Submit Quote Request"}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FiCheckCircle } from "react-icons/fi";
+import emailjs from "@emailjs/browser";
 import Button from "@/components/ui/Button";
 import type { ContactFormValues } from "@/types";
 
@@ -12,12 +13,28 @@ export default function ContactForm() {
     reset,
   } = useForm<ContactFormValues>();
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
-  const onSubmit = async () => {
-    // Wire this up to EmailJS (see README) or your backend of choice.
-    await new Promise((resolve) => setTimeout(resolve, 800));
-    setSubmitted(true);
-    reset();
+  const onSubmit = async (data: ContactFormValues) => {
+    setSubmitError(null);
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID || import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setSubmitError("Email delivery is not configured yet. Add your EmailJS credentials to .env.local and try again.");
+      return;
+    }
+
+    try {
+      await emailjs.send(serviceId, templateId, data, publicKey);
+      setSubmitted(true);
+      reset();
+    } catch (error) {
+      console.error("Contact form email failed", error);
+      setSubmitError("We couldn't send your message right now. Please try again in a moment.");
+    }
   };
 
   if (submitted) {
@@ -62,6 +79,8 @@ export default function ContactForm() {
           {errors.message && <p className="mt-1 text-xs text-primary">{errors.message.message}</p>}
         </div>
       </div>
+      {submitError && <p className="mt-4 text-sm text-primary">{submitError}</p>}
+
       <Button type="submit" disabled={isSubmitting} className="mt-6 w-full">
         {isSubmitting ? "Sending..." : "Send Message"}
       </Button>
