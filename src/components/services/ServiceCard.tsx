@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import type { IconType } from "react-icons";
 import type { Service } from "@/types";
+import { getServiceImageUrl } from "@/utils/serviceImages";
 
 export default function ServiceCard({
   service,
@@ -13,6 +14,8 @@ export default function ServiceCard({
   icon: IconType;
   delay?: number;
 }) {
+  const imageUrl = getServiceImageUrl(service.image);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -24,6 +27,18 @@ export default function ServiceCard({
         to={`/services/${service.slug}`}
         className="group flex h-full flex-col rounded-2xl border border-accent/70 bg-white p-7 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-elevated"
       >
+        {imageUrl ? (
+          <img
+            src={imageUrl}
+            alt={service.title}
+            className="mb-5 h-40 w-full rounded-xl object-cover"
+            loading="lazy"
+          />
+        ) : (
+          <div className="mb-5 flex h-40 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <Icon size={24} />
+          </div>
+        )}
         <div className="flex items-start justify-between">
           <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
             <Icon size={20} />

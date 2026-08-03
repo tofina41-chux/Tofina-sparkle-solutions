@@ -4,8 +4,11 @@ import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import type { Service } from "@/types";
+import { getServiceImageUrl } from "@/utils/serviceImages";
 
 export default function ServiceHero({ service }: { service: Service }) {
+  const imageUrl = getServiceImageUrl(service.image);
+
   return (
     <section className="relative overflow-hidden bg-secondary pt-40 pb-20">
       <svg className="absolute inset-0 h-full w-full opacity-[0.05]" aria-hidden="true">
@@ -19,6 +22,13 @@ export default function ServiceHero({ service }: { service: Service }) {
       <Container className="relative">
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <Badge>{service.category}</Badge>
+          {imageUrl && (
+            <img
+              src={imageUrl}
+              alt={service.title}
+              className="mt-8 h-64 w-full rounded-3xl object-cover shadow-elevated md:h-80"
+            />
+          )}
           <h1 className="mt-5 max-w-2xl font-display text-4xl font-semibold text-white md:text-5xl">
             {service.title}
           </h1>

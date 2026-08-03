@@ -6,7 +6,7 @@
     "summary": "Routine and one-off cleaning for houses and apartments, tailored to how your household actually lives.",
     "description": "Our residential teams cover every room to a consistent checklist, from kitchens and bathrooms to bedrooms and living areas. Choose a one-time visit or a weekly, bi-weekly, or monthly plan — the same two-person team returns each time so they learn your home.",
     "features": ["Kitchen degreasing & sanitising", "Bathroom descaling", "Dusting, vacuuming & mopping", "Bed making & tidying", "Window sills & skirting boards", "Recurring plans available"],
-    "image": "residential",
+    "image": "residential-cleaning.jpg",
     "startingPrice": "KES 2,500",
     "duration": "2 – 4 hours"
   },
@@ -17,7 +17,7 @@
     "summary": "Scheduled cleaning programs for retail spaces, showrooms, and commercial premises of any size.",
     "description": "We build a cleaning schedule around your operating hours so your business always presents well, without disrupting customers or staff. Includes supply management and a dedicated site supervisor for larger contracts.",
     "features": ["Flexible before/after-hours scheduling", "Dedicated site supervisor", "Consumables & supply restocking", "Floor care programs", "Compliance-ready checklists", "Monthly quality audits"],
-    "image": "commercial",
+    "image": "commercial-cleaning.jpg",
     "startingPrice": "Custom quote",
     "duration": "Scheduled"
   },
@@ -28,7 +28,7 @@
     "summary": "Daily or weekly office cleaning that keeps workstations, boardrooms, and communal areas presentable.",
     "description": "From open-plan floors to executive boardrooms, our office teams work around meetings and deadlines. Desks, glass partitions, kitchenettes, and washrooms are covered on a schedule you set.",
     "features": ["Desk & workstation wipe-down", "Glass partition cleaning", "Kitchenette & pantry care", "Washroom sanitising", "Bin liner replacement", "After-hours option"],
-    "image": "office",
+    "image": "office-cleaning.jpg",
     "startingPrice": "KES 8,000 / month",
     "duration": "Scheduled"
   },
@@ -39,7 +39,7 @@
     "summary": "Fast, thorough cleaning for retail shops that need to open looking spotless every single day.",
     "description": "Retail floors take a beating from foot traffic. We handle daily or nightly resets so shelves, floors, glass, and fitting rooms are guest-ready before opening.",
     "features": ["Shopfront glass cleaning", "Floor scrubbing & polishing", "Shelf & display dusting", "Fitting room resets", "Early-morning slots", "Spill response"],
-    "image": "shop",
+    "image": "shop-cleaning.jpg",
     "startingPrice": "KES 3,500",
     "duration": "1 – 3 hours"
   },
@@ -50,7 +50,7 @@
     "summary": "Lobbies, corridors, stairwells and communal amenities for apartment blocks and office parks.",
     "description": "Shared spaces are the first thing residents and visitors notice. We maintain lobbies, lifts, corridors, and communal amenities on a fixed schedule agreed with your caretaker or property manager.",
     "features": ["Lobby & reception care", "Lift & stairwell cleaning", "Corridor mopping & buffing", "Bin area management", "Handrail & touchpoint sanitising", "Weekly reporting"],
-    "image": "shared",
+    "image": "shared-spaces.jpg",
     "startingPrice": "Custom quote",
     "duration": "Scheduled"
   },
@@ -61,7 +61,7 @@
     "summary": "Deep hot-water extraction and stain treatment that restores colour and lifts embedded dirt.",
     "description": "We assess fibre type before treatment, pre-treat stains, then use hot-water extraction to lift dirt from deep within the pile — not just the surface. Carpets are left as dry as possible to minimise downtime.",
     "features": ["Fibre-safe pre-inspection", "Stain & spot treatment", "Hot-water extraction", "Deodorising finish", "Fast-dry technique", "Rugs & wall-to-wall carpet"],
-    "image": "carpet",
+    "image": "carpet-cleaning.jpg",
     "startingPrice": "KES 700",
     "duration": "2 – 5 hours"
   },
@@ -72,7 +72,7 @@
     "summary": "Upholstery cleaning for fabric and leather sofas that lifts stains without soaking the frame.",
     "description": "We identify your upholstery type first — fabric, suede, or leather — then use the correct method and products so colour and texture are preserved while stains and odours are removed.",
     "features": ["Fabric & leather safe", "Stain-specific treatment", "Odour neutralising", "Cushion cover care", "Fast-dry finish", "Per-seat pricing"],
-    "image": "sofa",
+    "image": "sofa-cleaning.jpg",
     "startingPrice": "KES 600 / seater",
     "duration": "1 – 2 hours"
   },
@@ -83,7 +83,7 @@
     "summary": "Deep sanitising that removes dust mites, stains, and odours for a genuinely fresher sleep surface.",
     "description": "Mattresses trap dust, sweat, and allergens over years of use. Our process combines dry vacuuming, steam sanitising, and stain treatment to leave your mattress hygienically clean and quick to dry.",
     "features": ["Dust mite & allergen treatment", "Steam sanitising", "Stain & odour removal", "Both-side cleaning", "Quick-dry process", "All mattress sizes"],
-    "image": "mattress",
+    "image": "mattress-cleaning.jpg",
     "startingPrice": "KES 700",
     "duration": "1 – 2 hours"
   },
@@ -94,7 +94,7 @@
     "summary": "A ground-up clean before you unpack, so day one in a new home feels the way it should.",
     "description": "New homes still need a deep clean, even after builders or previous tenants leave. We clean cabinets inside and out, sanitise bathrooms and kitchens, and handle windows so you can move straight in.",
     "features": ["Inside-cabinet cleaning", "Kitchen & bathroom sanitising", "Window & sill cleaning", "Floor deep clean", "Skirting & fixture wipe-down", "Same-week booking"],
-    "image": "movein",
+    "image": "move-in-cleaning.png",
     "startingPrice": "KES 3,000",
     "duration": "3 – 6 hours"
   },
@@ -105,7 +105,7 @@
     "summary": "Landlord-ready cleaning that protects your deposit and leaves the space guest-ready for the next tenant.",
     "description": "We follow a checklist built around typical landlord inspection standards, covering ovens, cabinets, bathrooms, and floors so you leave the property in the condition it deserves.",
     "features": ["Deposit-focused checklist", "Oven & appliance cleaning", "Cabinet interior cleaning", "Wall mark spot cleaning", "Full bathroom descaling", "Inspection-ready finish"],
-    "image": "moveout",
+    "image": "move-out-cleaning.png",
     "startingPrice": "KES 3,500",
     "duration": "3 – 6 hours"
   },
@@ -116,7 +116,7 @@
     "summary": "An intensive, top-to-bottom reset for homes or offices that haven't had professional attention in a while.",
     "description": "Deep cleaning goes beyond routine maintenance — behind appliances, inside cupboards, along skirting, and into corners that get missed week to week. Ideal as a seasonal reset or before a routine plan begins.",
     "features": ["Behind-appliance cleaning", "Cupboard interiors", "Grout & tile detailing", "Light fixture dusting", "Wall & door spot cleaning", "Full room-by-room checklist"],
-    "image": "deep",
+    "image": "deep-cleaning.png",
     "startingPrice": "KES 4,000",
     "duration": "4 – 8 hours"
   },
@@ -127,7 +127,7 @@
     "summary": "Heavy-duty debris, dust, and residue removal once builders and contractors have left site.",
     "description": "Post-construction sites need specialist handling — cement dust, paint splatter, and adhesive residue require different tools and products than routine cleaning. We clear the site to a move-in-ready standard.",
     "features": ["Cement dust & debris removal", "Paint & adhesive residue removal", "Window & frame cleaning", "Floor protection removal", "Fixture & fitting wipe-down", "Final walk-through inspection"],
-    "image": "postconstruction",
+    "image": "post-construction-cleaning.jpg",
     "startingPrice": "KES 350 / m²",
     "duration": "1 – 3 days"
   }
