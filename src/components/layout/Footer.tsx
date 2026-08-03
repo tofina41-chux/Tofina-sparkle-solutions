@@ -4,6 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import services from "@/data/services.json";
 import { PHONE_NUMBER, EMAIL_ADDRESS, FACEBOOK_URL, whatsappLink } from "@/utils/formatters";
+import logo from "@/assets/gallery/logo.png";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -21,7 +22,8 @@ export default function Footer() {
       <div className="container max-w-7xl py-16">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <p className="font-display text-lg font-bold tracking-tight">
+            <img src={logo} alt="Tofina Sparkle Solutions" className="h-16 w-auto" />
+            <p className="font-display text-lg font-bold tracking-tight mt-4" style={{ visibility: "hidden" }}>
               TOFINA <span className="text-primary">SPARKLE</span>
             </p>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">

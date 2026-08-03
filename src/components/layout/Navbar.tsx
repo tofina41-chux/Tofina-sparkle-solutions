@@ -7,6 +7,7 @@ import Button from "@/components/ui/Button";
 import MobileMenu from "./MobileMenu";
 import services from "@/data/services.json";
 import { PHONE_NUMBER } from "@/utils/formatters";
+import logo from "@/assets/gallery/logo.png";
 
 const NAV_LINKS = [
   { label: "Home", to: "/" },
@@ -30,13 +31,14 @@ export default function Navbar() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          solid ? "bg-white/95 backdrop-blur shadow-sm" : "bg-transparent"
+          solid ? "bg-white/90 backdrop-blur shadow-sm" : "bg-white/10 backdrop-blur"
         }`}
       >
         <div className="container max-w-7xl flex items-center justify-between py-4">
-          <Link to="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
+          <Link to="/" className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
+            <img src={logo} alt="Tofina Sparkle Solutions" className="h-12 w-auto" />
             <span
-              className={`font-display text-lg font-bold tracking-tight transition-colors ${
+              className={`font-display text-sm font-bold tracking-tight transition-colors ${
                 solid ? "text-secondary" : "text-white"
               }`}
             >
