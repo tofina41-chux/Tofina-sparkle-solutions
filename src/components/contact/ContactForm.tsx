@@ -28,7 +28,7 @@ export default function ContactForm() {
     }
 
     try {
-      await emailjs.send(serviceId, templateId, data, publicKey);
+      await emailjs.send(serviceId, templateId, { ...data }, publicKey);
       setSubmitted(true);
       reset();
     } catch (error) {
