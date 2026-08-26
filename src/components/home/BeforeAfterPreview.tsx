@@ -6,7 +6,8 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 
 function getImageUrl(filename: string) {
-  return new URL(`../../assets/gallery/${filename}.png`, import.meta.url).href;
+  const hasExtension = /\.[a-z0-9]+$/i.test(filename);
+  return new URL(`../../assets/gallery/${hasExtension ? filename : `${filename}.png`}`, import.meta.url).href;
 }
 
 function Slider({ item }: { item: (typeof beforeAfter)[number] }) {

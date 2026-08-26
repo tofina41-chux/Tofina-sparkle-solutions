@@ -28,7 +28,15 @@ export default function ContactForm() {
     }
 
     try {
-      await emailjs.send(serviceId, templateId, data, publicKey);
+      const payload: Record<string, unknown> = {
+        name: data.name,
+        phone: data.phone,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+      };
+
+      await emailjs.send(serviceId, templateId, payload, publicKey);
       setSubmitted(true);
       reset();
     } catch (error) {

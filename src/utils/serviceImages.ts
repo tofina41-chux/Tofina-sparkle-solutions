@@ -3,8 +3,8 @@ export function getServiceImageUrl(filename?: string): string | undefined {
 
   const normalized = filename.trim();
   const relativePath = normalized.startsWith("gallery/")
-    ? `../../assets/${normalized}`
-    : `../../assets/services/${normalized}`;
+    ? `../assets/${normalized}`
+    : `../assets/gallery/${normalized}`;
 
   return new URL(relativePath, import.meta.url).href;
 }

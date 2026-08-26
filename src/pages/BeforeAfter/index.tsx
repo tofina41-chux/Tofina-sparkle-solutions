@@ -5,7 +5,8 @@ import Section from "@/components/ui/Section";
 import Container from "@/components/ui/Container";
 
 function getImageUrl(filename: string) {
-  return new URL(`../../assets/gallery/${filename}.png`, import.meta.url).href;
+  const hasExtension = /\.[a-z0-9]+$/i.test(filename);
+  return new URL(`../../assets/gallery/${hasExtension ? filename : `${filename}.png`}`, import.meta.url).href;
 }
 
 export default function BeforeAfter() {
