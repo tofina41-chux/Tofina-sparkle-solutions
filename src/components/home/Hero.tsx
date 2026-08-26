@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FiArrowRight, FiStar } from "react-icons/fi";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
+import heroImage from "@/assets/gallery/residential-cleaning.png";
 
 const WORDS = ["Precise.", "Reliable.", "Immaculate."];
 
@@ -28,7 +29,8 @@ export default function Hero() {
       </svg>
 
       <Container className="relative z-10 py-24">
-        <div className="max-w-3xl">
+        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.8fr)] lg:gap-16">
+          <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -77,6 +79,21 @@ export default function Hero() {
             <Button to="/services" size="lg" variant="outline" className="border-white/25 text-white hover:border-white hover:text-white">
               Explore Services
             </Button>
+          </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="relative hidden aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/15 shadow-2xl lg:block"
+          >
+            <img
+              src={heroImage}
+              alt="Tofina Sparkle Solutions cleaning a sofa beside a pool"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-secondary/45 via-transparent to-white/5" />
           </motion.div>
         </div>
       </Container>
