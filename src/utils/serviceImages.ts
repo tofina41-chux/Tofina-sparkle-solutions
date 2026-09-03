@@ -2,9 +2,8 @@ export function getServiceImageUrl(filename?: string): string | undefined {
   if (!filename) return undefined;
 
   const normalized = filename.trim();
-  const relativePath = normalized.startsWith("gallery/")
-    ? `../assets/${normalized}`
-    : `../assets/gallery/${normalized}`;
 
-  return new URL(relativePath, import.meta.url).href;
+  return normalized.startsWith("gallery/")
+    ? new URL(`../assets/${normalized}`, import.meta.url).href
+    : new URL(`../assets/gallery/${normalized}`, import.meta.url).href;
 }
